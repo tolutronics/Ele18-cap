@@ -1,0 +1,117 @@
+.form{
+    padding: 10px;
+}
+ion-input{
+    border-bottom:  1px solid #ffffff;
+}
+ion-title{
+    text-transform: none;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 50%;
+
+}
+
+.p{
+    margin-top: -5px;
+}
+
+.post{
+    color: #ffffff;
+    height: 30px;
+    float: right;
+    height:100%;
+    padding:10px;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: -25px;
+}
+
+
+.back{
+    color: #ffffff;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.sector{
+    width: 100%;
+    padding: 20px;
+    background-color: rebeccapurple;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+img{
+    
+    width: 100%;
+    
+}
+
+.divider{
+    width: 100%;
+    border-top: 1px solid #4b4949;
+}
+
+ion-icon{
+    font-size: 30px;
+    margin-top: 5px;
+    color: rebeccapurple;
+}
+
+.emoji{
+    font-size: 30px;
+    margin-top: 5px;
+    color: rgb(255, 217, 0);
+}
+
+.color{
+    font-size: 30px;
+    margin-top: 5px;
+    color: green;
+}
+.icon{
+    font-size: 30px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+}
+.text{
+    float: right;
+    margin-right: 66%;
+    font-weight: bold;
+    color: #000000;
+}
+.text1{
+    margin-left: 40px;
+    color: #000000;
+    margin-top: -30px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.soon{
+    float: right;
+    font-weight: bold;
+    color: red;
+    margin-top: -20px;
+}
+
+
+ion-card{
+    width:100%;
+    padding: 10px;
+    margin: auto;
+}
+
+textarea{
+    color: #7e7c7c;
+    width: 100%;
+    font-family: monospace;
+    letter-spacing: 1px;
+    border: none;
+    margin-top: 10px;
+    font-size: larger;
+    outline: none;
+}

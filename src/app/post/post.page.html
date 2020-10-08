@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div class="back" (click)="back()">
+      <ion-icon class="icon" name="arrow-back"></ion-icon>
+  </div>
+    <ion-title>Create Post</ion-title>
+    <div class="post" (click)="Post()">
+        <p class="p">POST</p>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="Ptext" placeholder="What's on your mind"></textarea>
+   <img src="{{PhotoUrl}}">
+   <ion-card (click)="toGallery()"> <ion-icon name="image"></ion-icon> <p class="text">Add Photo</p> </ion-card>
+   <ion-card > <ion-icon class="emoji" name="happy"></ion-icon> <p class="text1">Add Feelings</p> <p class="soon">coming soon</p></ion-card>
+   <ion-card > <ion-icon name="attach"></ion-icon> <p class="text1">Tag Friends</p> <p class="soon">coming soon</p></ion-card>
+   <ion-card > <ion-icon class="color" name="square"></ion-icon> <p class="text1">Background Color<p class="soon">coming soon</p> </ion-card>
+
+</ion-content>

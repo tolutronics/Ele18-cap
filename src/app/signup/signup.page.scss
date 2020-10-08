@@ -1,0 +1,39 @@
+.back{
+    color: rgb(247, 247, 247);
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    z-index: 3;
+    border-radius: 5px;
+   // box-shadow: 0px 0px 3px 3px #888888;
+}
+
+.list{
+    margin-top:5%;
+}
+.Litem{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border:  2px solid #ffffff;
+    width:90%;
+    margin-bottom: 20px;
+    border-radius:22.5px;
+    text-align: center;
+}
+.btn{
+    width: 90%;
+    margin-left:  auto;
+    margin-right:  auto;
+    border:  2px solid #ffffff;
+    border-radius: 7px;
+    background-color: rebeccapurple;
+}
+
+.button-native{
+    background-color: rebeccapurple;
+}

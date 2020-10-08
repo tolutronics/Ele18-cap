@@ -1,0 +1,28 @@
+<ion-header>
+ 
+</ion-header >
+
+<ion-content color="primary">
+    <div class="back" (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+    </div>
+  <div class="list">
+
+    <ion-input class="Litem" type="text"  placeholder="FirstName" [(ngModel)]="first"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="LastName" [(ngModel)]="last"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="NickName" [(ngModel)]="nick"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Matric Number" [(ngModel)]="matric"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Password" [(ngModel)]="pass"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Email" [(ngModel)]="email"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Phone Number" [(ngModel)]="phone"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Work Place" [(ngModel)]="work"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Twitter" [(ngModel)]="twitter"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Linkedin" [(ngModel)]="linkedin"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Instagram" [(ngModel)]="insta"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Hobbies" [(ngModel)]="hobbies"></ion-input>
+    <ion-input class="Litem" type="text"  placeholder="Dislikes" [(ngModel)]="dislike"></ion-input>
+    <ion-input class="Litem" type="text"  value="https://www.kodefork.com/static/users/images/user.png" [(ngModel)]="photo"></ion-input>
+    <ion-button expand="full" class="btn" (click)="Signup()">Signup</ion-button>
+
+</div>
+</ion-content>

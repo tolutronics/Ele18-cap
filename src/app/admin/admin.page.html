@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <div class="edit" (click)="logout()">
+          <p>LOGOUT</p>
+      </div>
+    <ion-title>admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-item>
+          <ion-button class="btn" (click)="tofacePost()">FACE OF THE WEEK</ion-button>
+        </ion-item>
+    <ion-item>
+      <ion-button class="btn" (click)="toPost()">POST FEEDER</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-button class="btn" (click)="AddUser()">ADD USERS</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-button class="btn" (click)="DeleteUser()">DELETE USERS</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-button class="btn">GRANT  ACCESS</ion-button>
+    </ion-item>
+    </ion-list>
+</ion-content>

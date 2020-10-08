@@ -1,17 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 2
+      Mates
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content> 
+  <ion-searchbar showcancelbutton="onCancel($event)" (ionInput)="update($event)" placeholder="Search" [(ngModel)]="queryText"></ion-searchbar>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  
+    <ion-list *ngIf= "isLoaded; else elseTemplate">
+ <div *ngFor= "let mate of mates">
+        <ion-item (click)="View(mate)" class="item" *ngIf="mate.matric != mat" >
+           
+            <ion-avatar slot="start">
+              <img src="{{mate.photourl}}" />
+            </ion-avatar>
+            <ion-label>
+              <p>{{mate.firstname}} {{mate.lastname}}</p>
+              <h5>{{mate.matric}}</h5>
+            </ion-label>
+            <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+          </ion-item>
+        </div>
+        </ion-list>
+      <ng-template #elseTemplate>
+          <ion-list *ngFor= "let item of arrayOne(100)" >
+            <ion-item class="item" >
+               
+                <ion-avatar slot="start">
+                  <ion-skeleton-text animated></ion-skeleton-text>
+                </ion-avatar>
+                <ion-label>
+                  <p><ion-skeleton-text animated style="width:150px"></ion-skeleton-text></p>
+                  <h5><ion-skeleton-text animated style="width:100px"></ion-skeleton-text></h5>
+                </ion-label>
+              </ion-item>
+        </ion-list> 
+</ng-template>     
+         
+
+          
+      
 </ion-content>

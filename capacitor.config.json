@@ -1,0 +1,16 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "ELE18",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "PushNotifications": {
+      "PresentationOptions": ["badge", "sound", "alert"]
+    }
+  },
+  "cordova": {}
+}

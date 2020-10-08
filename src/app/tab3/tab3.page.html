@@ -1,17 +1,68 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+<ion-content color="#ffffff">
+  <div class="image">
+      <div class="logout" (click)="logout()">
+          <p>LOGOUT</p>
+      </div>
+    <div class="edit" (click)="edit()">
+          <ion-icon name="create"></ion-icon>
+      </div>
+      <img src="{{photourl}}" alt="">
+      <div class="name">{{lname}} {{fname}}</div>
+    </div>
+    
+    <div class="container">
+      <ion-label class="det">FIRST NAME <span class="det1">{{fname}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">LAST NAME <span class="det2">{{lname}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">NICKNAME <span class="det3">{{nick}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">MATRIC NO <span class="det4">{{matric}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">EMAIL <span class="det5">{{email}}</span></ion-label>
+    </div>
+      <div class="container">
+    <ion-label class="det">PASSWORD <span class="det6">{{pass}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">PHONE NO <span class="det6">{{phone}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+        <ion-label class="det">WORK PLACE <span class="det8">{{work}}</span></ion-label>
+        </div>
+  
+        <div class="container">
+          <ion-label class="det">LINKEDIN <span class="det8">{{linkedin}}</span></ion-label>
+          </div>
+  
+    <div class="container">
+    <ion-label class="det">TWITTER <span class="det7">{{twitter}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+    <ion-label class="det">INSTAGRAM <span class="det8">{{instagram}}</span></ion-label>
+    </div>
+  
+    <div class="container">
+        <ion-label class="det">HOBBIES <span class="det7">{{hobbies}}</span></ion-label>
+        </div>
+  
+        <div class="container">
+            <ion-label class="det">DISLIKES <span class="det7">{{dislike}}</span></ion-label>
+            </div>
+  
+  
+        
+  </ion-content>

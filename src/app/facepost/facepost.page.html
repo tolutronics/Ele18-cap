@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>face post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form">
+<div class="sector">
+  <label>POST TITLE</label><br><br>
+      <ion-input class="Litem" type="text"  [(ngModel)]="Ptitle"></ion-input></div>
+
+      <div class="sector">
+          <label>MATRIC NUMBER</label><br><br>
+              <ion-input class="Litem" type="text"  [(ngModel)]="fmatric"></ion-input></div>
+      
+
+      <div class="sector">
+          <label>POST IMAGE</label><br><br>
+                <ion-button class="btn" color="success" (click)="toGallery()">{{btnText}}</ion-button><br>
+                <img src="{{PhotoUrl}}">
+              </div>
+                
+                <div class="sector">
+                  <label>POST TEXT</label> <br><br>
+        
+                <textarea name="" id="" cols="30" rows="10" [(ngModel)]="Ptext"></textarea><br><br><br>
+        
+        
+                <ion-button expand="full" class="btn" color="success" (click)="Post()">POST</ion-button></div>
+
+  </div>
+ 
+  
+      
+
+</ion-content>

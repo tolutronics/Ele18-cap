@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>editprofile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img class="pic" src="{{PhotoUrl}}" alt="" >
+    <ion-button  class="btn" (click)="editPic()">Choose</ion-button>
+    <ion-list>
+        <ion-item>
+          <ion-label class="det">FIRST NAME </ion-label><ion-input [(ngModel)]="Fname" class="detN" value="{{fname}}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="det">LAST NAME </ion-label><ion-input [(ngModel)]="Lname" class="detI" value="{{lname}}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="det">NICKNAME </ion-label><ion-input [(ngModel)]="Nick" class="detI" value="{{nick}}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="det">MATRIC NO </ion-label><ion-input [(ngModel)]="Matric" class="detN" value="{{matric}}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="det">EMAIL </ion-label><ion-input [(ngModel)]="Email" class="detL" value="{{email}}"></ion-input>
+        </ion-item>
+      
+          <ion-item>
+              <ion-label class="det">PASSWORD </ion-label><ion-input  [(ngModel)]="Pass" class="detI" value="{{pass}}"></ion-input>
+            </ion-item>
+          <ion-item>
+        <ion-label class="det">PHONE NO </ion-label><ion-input [(ngModel)]="Phone" class="detI" value="{{phone}}"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label class="det">WORK PLACE </ion-label><ion-input [(ngModel)]="Work" class="detI" value="{{work}}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="det">LINKEDIN </ion-label><ion-input [(ngModel)]="Linkedin" class="detL" value="{{linkedin}}"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="det">TWITTER </ion-label><ion-input [(ngModel)]="Twitter" class="detL" value="{{twitter}}"></ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label class="det">INSTAGRAM </ion-label><ion-input [(ngModel)]="Instagram" class="detI" value="{{instagram}}"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label class="det">HOBBIES </ion-label><ion-input [(ngModel)]="Hobbies" class="detL" value="{{hobbies}}"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label class="det">DISLIKES </ion-label><ion-input [(ngModel)]="Dislike" class="detL" value="{{dislike}}"></ion-input>
+    </ion-item>
+      
+    </ion-list>
+    <ion-button expand="full" class="btn" (click)="edited()">Update Profile</ion-button>
+</ion-content>

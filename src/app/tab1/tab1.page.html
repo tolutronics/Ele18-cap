@@ -1,17 +1,100 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
+ 
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-card class="container">
+  <img class="simg" src="{{photourl}}" alt="">
+    <ion-input (click)="toPost()" class="Litem" type="text" disabled="true" placeholder="What's on your mind"></ion-input>
+  </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+   <ion-card class="card" *ngIf= "isLoaded; else elseTemplate">
+     <img src="{{fphotourl}}" alt="">
+  <ion-card-header>
+    <ion-card-subtitle>{{fmatric}}</ion-card-subtitle>
+    <ion-card-title>{{ftitle}}</ion-card-title>
+  </ion-card-header> 
+
+  <ion-card-content class="textbox">
+ {{ftext}}
+    <br><br><br>
+
+  </ion-card-content>
+  <ion-row class="comt">
+      <ion-col (click)="comt2('FACE OF THE WEEK')" class="comt2" ><ion-icon class="comtIcon" name="chatboxes"></ion-icon>Comments</ion-col>
+      <h4 class="counter"><p class="inner">{{count}}</p></h4>
+    </ion-row>
+</ion-card>
+
+<div *ngIf= "isLoaded; else elseTemplate2">
+<ion-card class="card" *ngFor="let post of posts ; let i = index">
+  
+    <ion-card-header>
+        <img class="pimg" src="{{post.posterphoto}}" alt="">
+        <ion-card-title (click)="profile(post.matric)">{{post.name1}} {{post.name2}}</ion-card-title>
+        <ion-card-subtitle>{{post.day}} {{post.time}}</ion-card-subtitle>
+    </ion-card-header>
+  <img src="{{post.photourl}}" alt="">
+<ion-card-content class="textbox">
+{{post.text}}
+</ion-card-content>
+<ion-row class="comt">
+  
+    <ion-col (click)="comt(post.name1,post.name2,post.id)" class="comt2"><ion-icon class="comtIcon" name="chatboxes"></ion-icon>Comments</ion-col>
+    <h4 class="counter"><p class="inner">{{post.count}}</p></h4>
+  </ion-row>
+
+</ion-card>
+</div>
+
+<ng-template #elseTemplate>
+
+   <ion-card class="card" *ngFor= "let item of arrayOne(10)">
+    <div><ion-skeleton-text animated style="width: 200px; height: 200px;"></ion-skeleton-text></div>
+  <ion-card-header>
+    <ion-card-subtitle><ion-skeleton-text animated></ion-skeleton-text></ion-card-subtitle>
+    <ion-card-title><ion-skeleton-text animated></ion-skeleton-text></ion-card-title>
+  </ion-card-header> 
+
+  <ion-card-content>
+ <ion-skeleton-text animated></ion-skeleton-text>
+    <br><br><br>
+
+  </ion-card-content>
+  <ion-row class="comt">
+      <ion-col class="comt2" ><ion-skeleton-text animated></ion-skeleton-text></ion-col>
+      <h4><ion-skeleton-text animated></ion-skeleton-text></h4>
+    </ion-row>
+</ion-card>
+</ng-template>
+
+<ng-template #elseTemplate2>
+
+   <ion-card class="card" >
+    <div><ion-skeleton-text animated style="width: 200px; height: 200px;"></ion-skeleton-text></div>
+  <ion-card-header>
+    <ion-card-subtitle><ion-skeleton-text animated></ion-skeleton-text></ion-card-subtitle>
+    <ion-card-title><ion-skeleton-text animated></ion-skeleton-text></ion-card-title>
+  </ion-card-header> 
+
+  <ion-card-content>
+ <ion-skeleton-text animated></ion-skeleton-text>
+    <br><br><br>
+
+  </ion-card-content>
+  <ion-row class="comt">
+      <ion-col class="comt2" ><ion-skeleton-text animated></ion-skeleton-text></ion-col>
+      <h4><ion-skeleton-text animated></ion-skeleton-text></h4>
+    </ion-row>
+</ion-card>
+</ng-template>
 </ion-content>
+
+
+

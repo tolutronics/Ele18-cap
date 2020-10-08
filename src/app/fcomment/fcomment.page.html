@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">FACE OF THE WEEK</ion-title>
+    <div class="close" (click)="close()"><h6>Close</h6> </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf= "isLoaded; else elseTemplate">
+<ion-card  *ngFor="let fcomment of fcomments ; let i=index">
+   
+     <img class="image" src="{{fcomment.photourl}}" alt="">
+     <div class="comment">
+       <div class="commenter"> {{fcomment.fcommenterF}} {{fcomment.fcommenterL}}</div>
+   <div class="commentText">{{fcomment.fcomment}}</div>
+       </div>
+     </ion-card> </div> 
+
+<ng-template #elseTemplate>
+     <ion-card  *ngFor="let fcomment of fcomments ; let i=index">
+   
+        <ion-avatar class="image"><ion-skeleton-text animated></ion-skeleton-text></ion-avatar>
+        <div class="comment">
+          <div class="commenter"> <ion-skeleton-text animated style="width:100px"></ion-skeleton-text></div>
+      <div class="commentText"><ion-skeleton-text animated style="width:150px"></ion-skeleton-text></div>
+          </div>
+        </ion-card>
+      </ng-template>
+</ion-content>
+
+<ion-footer>
+
+    <div class="textdiv">
+ 
+        <ion-row>
+        <textarea placeholder="Say something... " [(ngModel)]="fcomment"  class="msd-elastic" ng-model="bar"></textarea>
+      <div class="sendBtn" (click)="PcmtBtn()"><ion-icon class="sendIcon" name="send"></ion-icon></div>
+        </ion-row>
+           
+      </div>
+</ion-footer>

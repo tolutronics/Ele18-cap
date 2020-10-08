@@ -1,0 +1,180 @@
+.welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  
+  .simg{
+    float: left;
+    width: 35px;
+    height: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+    border-radius: 100%;
+  }
+  
+  .pimg{
+    float: left;
+    width: 35px;
+    height: 35px;
+  margin-right: 10px;
+  margin-top: 10px;
+    border-radius: 100%;
+  }
+  
+  .counter{
+    background-color: rebeccapurple;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin-left: -22px;
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  
+  .inner{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+  
+  .Litem{ 
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    border:  1px solid #919191;
+    width:75%;
+    height: 35px;
+    color: #4d4b4b;
+    border-radius:22.5px;
+  }
+  
+  .card{
+    background-color:#ffffff;
+    width: 100%;
+    margin-top:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+  }
+  
+  .container{
+    background-color:#ffffff;
+    width: 100%;
+    margin:  auto;
+    height: 60px;
+    margin-bottom: 10px;
+   
+  }
+  
+  
+  .comt{
+    border-top: 1px solid #f0e9e9;
+    color: #444242;
+  
+  } 
+  
+  
+  .comt2{
+   float: right;
+    color: #444242;
+    width:200px;
+    text-align: right;
+    margin-right: 20px;
+  
+  }
+  
+  .likeIcon{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .comtIcon{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .cmtdiv{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .image{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .commenter{
+    font-weight: bold;
+    font-size: 80%;
+    margin-left: 3px;
+  }
+  .comment{
+    color: rgb(20, 20, 20);
+    float: right;
+    border-radius: 10px;
+    background-color: #F2F3F5;
+    width: 70%;
+    margin-top: -40px;
+    transform: translate(-10%, -10%);
+    padding: 7px;
+  }
+  .commentText{
+    margin-left: 7px;
+    font-size: 80%;
+  }
+  .comment::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #F2F3F5;
+  border-bottom: 13px solid transparent;
+  margin: 10px 0 0 -22px;
+  
+  }
+  .sendBtn{
+    height: 30px;
+    width:10%;
+    max-width:40px;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    float:right;
+    background-color:rebeccapurple;
+   
+  }
+  
+  .sendIcon{
+    
+      width: 20px;
+      height: 20px;
+      box-shadow: none;
+      border: none;
+      color:#ffffff;
+      background: transparent;
+      margin-top:5px;
+    
+  }
+  
+  textarea{
+   width:90%;
+  border:none;
+  outline:none;
+    height:30px;
+    border-top-left-radius:22.5px;
+    border-bottom-left-radius:22.5px;
+  }
+  .textdiv{
+    text-align:center;
+    width:100%;
+    border:1px solid #000000;
+    border-top-left-radius:22.5px;
+    border-bottom-left-radius:22.5px;
+    height:auto;
+  }
+  
